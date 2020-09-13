@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "postinstall": "typesync",
-    "prisma:migrate": "prisma",
+    "prisma:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
     "prisma:generate": "prisma generate"
   },
   "dependencies": {
