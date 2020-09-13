@@ -1,6 +1,6 @@
 # Ywitter (Twitter-like)
 
-> Toy project completly done (and projected) by me in this hot sunday of september
+> Toy project completly done (and projected) by me in this hot september sunday
 
 ## [Check the demo]()
 
