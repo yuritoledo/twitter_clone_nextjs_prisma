@@ -7,7 +7,8 @@
     "start": "next start",
     "postinstall": "typesync",
     "prisma:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate",
+    "lint": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
     "@prisma/client": "^2.6.2",
@@ -16,10 +17,20 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@types/eslint": "^7.2.2",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
-    "typescript": "4.0"
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "typescript": "4.0",
+    "typesync": "^0.7.0"
   },
   "license": "MIT"
 }
