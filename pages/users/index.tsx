@@ -1,8 +1,8 @@
-import { GetStaticProps } from 'next'
-import Link from 'next/link'
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
 
-import { User } from '../../interfaces'
-import Layout from '../../components/Layout'
+import { User } from '../../interfaces';
+import Layout from '../../components/Layout';
 
 type Props = {
   items: User[]
@@ -18,10 +18,8 @@ const WithStaticProps = ({ items }: Props) => (
       </Link>
     </p>
   </Layout>
-)
+);
 
-export const getStaticProps: GetStaticProps = async () => {
-  return { props: { items: [] } }
-}
+export const getStaticProps: GetStaticProps = async () => ({ props: { items: [] } });
 
-export default WithStaticProps
+export default WithStaticProps;
