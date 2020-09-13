@@ -1,15 +1,20 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
+import Layout from 'components/Layout';
+import { createTweet } from 'services/tweet';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js </h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-);
+const IndexPage = () => {
+  const fill = () => {
+    createTweet({
+      text: 'alou',
+      User: { connect: { id: 1 } },
+    });
+  };
+
+  return (
+    <Layout title="Home | Next.js + TypeScript Example">
+      <h1>Hello Stranger </h1>
+      <button type="button" onClick={fill}>aoou</button>
+    </Layout>
+  );
+};
 
 export default IndexPage;
