@@ -6,15 +6,16 @@
     "build": "next build",
     "start": "next start",
     "postinstall": "typesync",
-    "prisma:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
-    "prisma:generate": "prisma generate",
+    "prisma:migrate": "cd prisma && prisma migrate save --experimental && prisma migrate up --experimental",
+    "prisma:generate": "cd prisma && prisma generate",
     "lint": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
     "@prisma/client": "^2.6.2",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "swr": "^0.3.5"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.2",
