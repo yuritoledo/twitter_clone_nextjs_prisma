@@ -27,5 +27,6 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'react/require-default-props': 'off',
+    'no-console': 'off',
   },
 };
