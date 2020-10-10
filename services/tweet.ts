@@ -1,7 +1,7 @@
 import { TweetCreateInput } from '@prisma/client';
 
 export const createTweet = async (tweet: TweetCreateInput) => {
-  const httpResponse = await fetch('api/tweet/create', {
+  const httpResponse = await fetch('api/tweets', {
     method: 'POST',
     body: JSON.stringify(tweet),
   });
