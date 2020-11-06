@@ -21,6 +21,10 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    semi: [
+      'warn',
+      'never',
+    ],
     'react/react-in-jsx-scope': 'off',
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
@@ -28,5 +32,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'react/require-default-props': 'off',
     'no-console': 'off',
+    'react/prop-types': 'off',
+    'import/prefer-default-export': 'off',
   },
-};
+}
