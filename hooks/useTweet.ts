@@ -1,5 +1,5 @@
-import { User } from '@prisma/client';
-import useSWR from 'swr';
+import { User } from '@prisma/client'
+import useSWR from 'swr'
 
 type Tweet = {
   id: number
@@ -8,9 +8,9 @@ type Tweet = {
 }
 
 const useTweet = () => {
-  const { data, isValidating, error } = useSWR<Tweet[]>('/api/tweet');
+  const { data, isValidating, error } = useSWR<Tweet[]>('/api/tweet')
 
-  return { data, isValidating, error };
-};
+  return { data, isValidating, error }
+}
 
-export default useTweet;
+export default useTweet
