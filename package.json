@@ -11,10 +11,17 @@
     "lint": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "@prisma/client": "^2.6.2",
+    "axios": "^0.21.0",
+    "emotion-theming": "^10.0.27",
+    "framer-motion": "^2.9.4",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.11.0",
     "swr": "^0.3.5"
   },
   "devDependencies": {
